@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+  <title>Achievements - Nitin Gautam</title>
+  <link rel="stylesheet" href="all.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+    #header {
+      background-color: #333;
+      color: white;
+      padding: 10px 0;
+    }
+    #header nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+    #header nav ul li {
+      margin: 0 15px;
+    }
+    #header nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+    #achievements {
+      text-align: center;
+      padding: 20px;
+    }
+    .certificates {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .certificate {
+      margin: 15px;
+      cursor: pointer;
+      position: relative;
+    }
+    .certificate img {
+      width: 150px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .certificate-title {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 5px;
+      border-radius: 0 0 10px 10px;
+      text-align: center;
+      font-size: 14px;
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.8);
+      justify-content: center;
+      align-items: center;
+    }
+    .modal img {
+      max-width: 90vw;
+      max-height: 90vh;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 25px;
+      color: white;
+      font-size: 30px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="achievements.html">Achievements</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div id="achievements" class="container">
+    <h1>My Achievements</h1>
+    <div class="certificates">
+      <div
+        class="certificate"
+        onclick="openModal('https://res.cloudinary.com/dj0ppzthg/image/upload/v1761660774/Alibaba_zzw8md.jpg')"
+      >
+        <img
+          src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1761660774/Alibaba_zzw8md.jpg"
+          alt="Alibaba Certificate"
+        />
+        <div class="certificate-title">Alibaba Certificate</div>
+      </div>
+
+      <div
+        class="certificate"
+        onclick="openModal('https://res.cloudinary.com/dj0ppzthg/image/upload/v1761660939/cyberseqrty_xgrnoh.jpg')"
+      >
+        <img
+          src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1761660939/cyberseqrty_xgrnoh.jpg"
+          alt="Cybersecurity Essentials"
+        />
+        <div class="certificate-title">Cybersecurity Essentials</div>
+      </div>
+
+      <div
+        class="certificate"
+        onclick="openModal('https://res.cloudinary.com/dj0ppzthg/image/upload/v1761661056/cyberseqrtyy_lltzp6.jpg')"
+      >
+        <img
+          src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1761661056/cyberseqrtyy_lltzp6.jpg"
+          alt="Cybersecurity"
+        />
+        <div class="certificate-title">Cybersecurity</div>
+      </div>
+
+      <div
+        class="certificate"
+        onclick="openModal('https://res.cloudinary.com/dj0ppzthg/image/upload/v1761661212/jnuelerning_xgzzik.jpg')"
+      >
+        <img
+          src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1761661212/jnuelerning_xgzzik.jpg"
+          alt="Juniper Elearning"
+        />
+        <div class="certificate-title">Juniper Elearning</div>
+      </div>
+
+      <div
+        class="certificate"
+        onclick="openModal('https://res.cloudinary.com/dj0ppzthg/image/upload/v1761661138/java_toabdp.jpg')"
+      >
+        <img
+          src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1761661138/java_toabdp.jpg"
+          alt="Java Certificate"
+        />
+        <div class="certificate-title">Java Certificate</div>
+      </div>
+
+      <div
+        class="certificate"
+        onclick="openModal('https://res.cloudinary.com/dj0ppzthg/image/upload/v1761661356/packet_tracer_luvs13.jpg')"
+      >
+        <img
+          src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1761661356/packet_tracer_luvs13.jpg"
+          alt="Packet Tracer"
+        />
+        <div class="certificate-title">Packet Tracer</div>
+      </div>
+
+      <div
+        class="certificate"
+        onclick="openModal('https://res.cloudinary.com/dj0ppzthg/image/upload/v1761661290/paloalto_xglavf.jpg')"
+      >
+        <img
+          src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1761661290/paloalto_xglavf.jpg"
+          alt="Palo Alto Networks"
+        />
+        <div class="certificate-title">Palo Alto Networks</div>
+      </div>
+
+      <div
+        class="certificate"
+        onclick="openModal('https://res.cloudinary.com/dj0ppzthg/image/upload/v1761661427/javafukk_em9urt.jpg')"
+      >
+        <img
+          src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1761661427/javafukk_em9urt.jpg"
+          alt="Java Full Stack Developer"
+        />
+        <div class="certificate-title">Java Full Stack Developer</div>
+      </div>
+
+      <div
+        class="certificate"
+        onclick="openModal('https://res.cloudinary.com/dj0ppzthg/image/upload/v1761661509/juniper_wexx0z.jpg')"
+      >
+        <img
+          src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1761661509/juniper_wexx0z.jpg"
+          alt="Juniper Networks"
+        />
+        <div class="certificate-title">Juniper Networks</div>
+      </div>
+
+      <div
+        class="certificate"
+        onclick="openModal('https://res.cloudinary.com/dj0ppzthg/image/upload/v1761661462/networkcloud_j4v7wt.jpg')"
+      >
+        <img
+          src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1761661462/networkcloud_j4v7wt.jpg"
+          alt="Network Cloud"
+        />
+        <div class="certificate-title">Network Cloud</div>
+      </div>
+    </div>
+  </div>
+
+  <div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="modalImage" src="" alt="Certificate Image" />
+  </div>
+
+  <script>
+    function openModal(imageSrc) {
+      document.getElementById("modalImage").src = imageSrc;
+      document.getElementById("myModal").style.display = "flex";
+    }
+
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+
+    window.onclick = function (event) {
+      if (event.target == document.getElementById("myModal")) {
+        closeModal();
+      }
+    };
+  </script>
+</body>
+</html>

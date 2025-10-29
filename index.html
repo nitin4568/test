@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Nitin Gautam</title>
+  <link rel="stylesheet" href="nitin.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="nlogo.png" />
+  <script src="https://kit.fontawesome.com/b0a8d4fc57.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- 🌌 BACKGROUND (Firefly + Galaxy) -->
+  <div class="firefly-container">
+    <canvas id="fireflyCanvas"></canvas>
+    <div class="celestial sun"></div>
+    <div class="celestial moon"></div>
+    <div class="galaxy"></div>
+  </div>
+
+  <!-- 🌓 THEME TOGGLE -->
+  <button id="themeToggle" title="Toggle Day/Night">🌙</button>
+
+  <!-- 💼 HEADER -->
+  <header id="header">
+    <div class="container">
+      <nav>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+        <span class="name"></span>
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#Projects">Projects</a></li>
+          <li><a href="#certificate">Certificates</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <button class="hire-me-btn"><i class="fa-solid fa-phone"></i> Hire Me</button>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 🧠 ABOUT -->
+  <section id="About">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="nitingau.jpg" alt="Nitin Gautam" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>Hi, I'm Nitin Gautam, a passionate developer skilled in Flutter, Java, and modern UI design.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="education" id="Education">
+    <h2 class="heading">Education</h2>
+
+    <div class="timeline-items">
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2020</div>
+
+        <div class="timeline-content">
+          <div class="cat">
+            <div class="ear ear--left"></div>
+            <div class="ear ear--right"></div>
+            <div class="face">
+              <div class="eye eye--left">
+                <div class="eye-pupil"></div>
+              </div>
+              <div class="eye eye--right">
+                <div class="eye-pupil"></div>
+              </div>
+              <div class="muzzle"></div>
+            </div>
+          </div>
+          <h2 style="color: white; text-decoration: underline;">Higher Education (10th)</h2>
+          <p><b>JAWAHAR NAVODAYA VIDYALAYA</b><br>
+            Jabalpur<br><br><b>93.40%</b></p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot pic-dot"></div>
+        <div class="timeline-date">2022</div>
+
+        <div class="timeline-content">
+          <h2 style="color: white; text-decoration: underline;">Intermediate (12th)</h2>
+          <p><b>JAWAHAR NAVODAYA VIDYALAYA</b><br>
+            Jabalpur<br><br><b>93.00%</b></p>
+        </div>
+
+        <div class="hover-img">
+          <img src="https://res.cloudinary.com/dpjbpidwj/image/upload/v1738129350/Portfolio1/g08eyhd2scodvpi2qpxr.jpg"
+            alt=" " class="img-fluid">
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">...2026</div>
+
+        <div class="timeline-content">
+          <div class="cat">
+            <div class="ear ear--left"></div>
+            <div class="ear ear--right"></div>
+            <div class="face">
+              <div class="eye eye--left">
+                <div class="eye-pupil"></div>
+              </div>
+              <div class="eye eye--right">
+                <div class="eye-pupil"></div>
+              </div>
+              <div class="muzzle"></div>
+            </div>
+          </div>
+          <h2 style="color: white; text-decoration: underline;">University</h2>
+          <p>GYAN GANGA INSTITUTE OF TECHNOLOGY AND SCIENCE</p>
+          <p><b>B.Tech. CSE</b></p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 🧩 HIGHLIGHTED SKILLS -->
+  <section id="skills">
+    <div class="containerr">
+      <h1>Highlighted Skills</h1>
+      <div class="skills-grid">
+        <div class="skill-card"><img src="flutter.png" alt="Flutter" /><p>Flutter</p></div>
+        <div class="skill-card"><img src="da.png" alt="Dart" /><p>Dart</p></div>
+        <div class="skill-card"><img src="javaaa.png" alt="Java" /><p>Java</p></div>
+        <div class="skill-card"><img src="Kotlin.png" alt="Kotlin" /><p>Kotlin</p></div>
+        <div class="skill-card"><img src="Xml.png" alt="XML" /><p>XML</p></div>
+        <div class="skill-card"><img src="material.png" alt="Material-UI" /><p>Material-UI</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ⚙️ SERVICES -->
+  <section id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Design</h2>
+          <p>Designing responsive and elegant websites with HTML, CSS, and JS.</p>
+        </div>
+        <div>
+          <i class="fa-brands fa-java"></i>
+          <h2>Programming</h2>
+          <p>C, C++, Java, Kotlin, Flutter, Dart, JavaScript, Firebase.</p>
+        </div>
+        <div>
+          <i class="fa-brands fa-android"></i>
+          <h2>App Development</h2>
+          <p>Building full-stack Android & Flutter apps with modern UIs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 💻 PROJECTS -->
+  <section id="Projects">
+    <div class="project-list">
+      <h1 class="title">My Projects</h1>
+      <ul>
+        <li>
+          <div class="index"><span>01</span></div>
+          <div class="release-year"><span>2023</span></div>
+          <div class="project-name">
+            <h2><a href="https://ggrt.onrender.com/" target="_blank">GGRT Gyan Ganga Room Tracker</a></h2>
+          </div>
+          <div class="genere"><span>website, navigation, information</span></div>
+          <div class="hover-img">
+            <img src="https://res.cloudinary.com/dpjbpidwj/image/upload/v1738129351/Portfolio1/yxoyncrueug7uj8efggw.png" alt="GGRT" />
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+
+  <!-- Certificate Section -->
+  <section class="Certificate" id="certificate">
+    <h2 class="heading" style="margin-bottom: 5rem;">My <span>Certifications</span></h2>
+    <div class="stack-area">
+      <div class="left">
+        <div class="title" id="title"></div>
+        <div class="sub-title" id="sub-title"><br /></div>
+      </div>
+      <div class="right">
+        <div class="card">
+          <img src="https://res.cloudinary.com/dpjbpidwj/image/upload/v1738129702/Certificates/peeubl0gr9sa2ewlxb8g.jpg"
+            alt="SIH FINALIST 2024" />
+
+        </div>
+        <div class="card">
+          <img src="https://res.cloudinary.com/dpjbpidwj/image/upload/v1738129461/Certificates/mmlzvwwz5pidcbcqwxqo.jpg"
+            alt="Cisco-Linux" />
+          <!-- <div class="sub">Boost Productivity</div>
+          <div class="content">Perform Tasks in less time</div> -->
+        </div>
+        <div class="card">
+          <img src="https://res.cloudinary.com/dpjbpidwj/image/upload/v1738129460/Certificates/spi5fkfnebragssyz7qa.jpg"
+            alt="cisco-Python" />
+          <!-- <div class="sub">Facilitated learning</div>
+          <div class="content">Train anyone from anywhere</div> -->
+        </div>
+        <div class="card">
+          <img src="https://res.cloudinary.com/dpjbpidwj/image/upload/v1738129461/Certificates/akadu4lgdr7pufl5gqvk.jpg"
+            alt="cisco-cyberSecurity" />
+          <!-- <div class="sub">Support</div>
+          <div class="content">Now it's 24/7 support</div> -->
+        </div>
+        <div class="card">
+          <img src="https://res.cloudinary.com/dpjbpidwj/image/upload/v1738129451/Certificates/gtnwwtzfnxyf9ydl6qq5.jpg"
+            alt="cisco-Packet-Tracer" />
+          <!-- <div class="sub">Support</div>
+          <div class="content">Now it's 24/7 support</div> -->
+        </div>
+        <div class="card">
+          <img src="https://res.cloudinary.com/dpjbpidwj/image/upload/v1738129459/Certificates/vw2szr3z6pzlkznaw366.jpg"
+            alt="cisco-Cloud-Security" />
+          <!-- <div class="sub">Support</div>
+          <div class="content">Now it's 24/7 support</div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 📞 CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i> nkgautam1450@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i> +91-8085476868</p>
+
+          <div class="social-icons">
+            <a href="https://facebook.com/profile.php?id=100049727286684"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://leetcode.com/u/nitin_14920914/"><i class="fa-brands fa-free-code-camp"></i></a>
+            <a href="https://x.com/nkgautam1450"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://t.me/Nk14920914unknown"><i class="fa-brands fa-telegram"></i></a>
+            <a href="https://linkedin.com/in/nitin-gautam-058308264"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/nitin4568"><i class="fa-brands fa-github"></i></a>
+          </div>
+
+          <a href="Nitin Gautam.pdf" download class="btn btn2">Download CV</a>
+        </div>
+
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your name" required />
+            <input type="email" name="email" placeholder="Your email" required />
+            <textarea name="message" rows="6" placeholder="Your message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
